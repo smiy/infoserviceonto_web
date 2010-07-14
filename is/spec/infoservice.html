@@ -120,9 +120,9 @@ href="http://smiy.svn.sourceforge.net/viewvc/smiy/specgen/trunk/">here</a> for S
   <a id="sec-glance"></a>
   <h2 id="glance">The Info Service Ontology at a glance</h2>
   
+  <p>The <a href="http://purl.org/ontology/is/infoservice.html#InfoService"><em>is:InfoService</em></a> concept as graph with relations:</p>
 <div about="http://purl.org/ontology/is/core#" rel="rdfs:seeAlso">
-<img src="http://infoservice.sourceforge.net/is/gfx/infoservice.gif" title="The info service concept as graph with relations" alt="The info service concept as graph with relations" />
-The info service concept as graph with relations</div>
+<img src="http://infoserviceonto.sourceforge.net/is/gfx/infoservice.gif" title="The info service concept as graph with relations" alt="The info service concept as graph with relations" /></div>
  
  <p>An a-z index of Info Service Ontology terms, by class (categories or types) and by property.</p>
  
@@ -160,9 +160,11 @@ isi:musicbrainz a is:InfoService .
   (as proposed in the <a href="http://wiki.foaf-project.org/w/FOAF_and_InformationServices">FOAF wiki</a>). This is shown in the example above for 
   a document taken from <em>MusicBrainz</em>.</p>
   
-    <p about="http://purl.org/ontology/is/infoservice.html" rel="rdfs:seeAlso">A graphic of <em>MusicBrainz</em> modelled as <em>Information Service</em>:
+  <p>A graphic of <em>MusicBrainz</em> modelled as <em>Information Service</em>:</p>
+  
+    <div about="http://purl.org/ontology/is/infoservice.html" rel="rdfs:seeAlso">
 <img src="http://infoserviceonto.sourceforge.net/is/gfx/is_-_musicbrainz_example.gif" title="The Info Service Ontology - MusicBrainz example" 
-alt="The Info Service Ontology - MusicBrainz example" /></p>
+alt="The Info Service Ontology - MusicBrainz example" /></div>
   
   <p>RDF/Turtle representation of <em>MusicBrainz</em> modelled as <em>Information Service</em>:</p>
 
@@ -214,6 +216,28 @@ is also the property <a href="http://purl.org/ontology/is/infoservice.html#main_
 
  <h2 id="sec-intro">Introduction: Info Service Ontology Basics</h2>
 
+<h3>Info Service Ontology Namespaces, Domains and Prefixes</h3>
+
+<p>For representing the different issues of the <em>Info Service Ontology</em>, it was necessary to assign several namespaces/domains, which are the following ones:</p>
+<ul>
+	<li><a href="http://purl.org/ontology/is/core#">http://purl.org/ontology/is/core#</a><br />&nbsp;&nbsp;&nbsp;includes the core ontology specification<br />
+	&nbsp;&nbsp;&nbsp;preferred prefix: <strong>is</strong></li>
+	<li><a about="http://purl.org/ontology/is/core#" rel="rdfs:seeAlso" href="http://purl.org/ontology/is/types/">http://purl.org/ontology/is/types/</a><br />
+	&nbsp;&nbsp;&nbsp;the domain, which should be used for defining <a href="http://purl.org/ontology/is/infoservice.html#InfoServiceType"><em>is:InfoServiceType</em></a>
+	 individuals<br />&nbsp;&nbsp;&nbsp;preferred prefix: <strong>ist</strong></li>
+	<li><a about="http://purl.org/ontology/is/core#" rel="rdfs:seeAlso" href="http://purl.org/ontology/is/ctypes/">http://purl.org/ontology/is/ctypes/</a><br />
+	&nbsp;&nbsp;&nbsp;the domain, which should be used for defining <a href="http://purl.org/ontology/is/infoservice.html#InfoServiceContributorType"><em>is:InfoServiceContributorType</em></a> 
+	individuals<br />
+	&nbsp;&nbsp;&nbsp;preferred prefix: <strong>isct</strong></li>
+	<li><a about="http://purl.org/ontology/is/core#" rel="rdfs:seeAlso" href="http://purl.org/ontology/is/quality/">http://purl.org/ontology/is/quality/</a><br />
+	&nbsp;&nbsp;&nbsp;the domain, which should be used for defining information service quality ontologies<br />
+	&nbsp;&nbsp;&nbsp;preferred prefix: <strong>isq</strong></li>
+	<li><a about="http://purl.org/ontology/is/core#" rel="rdfs:seeAlso" href="http://purl.org/ontology/is/inst/">http://purl.org/ontology/is/inst/</a><br />
+	&nbsp;&nbsp;&nbsp;the domain, which should be used for defining <a href="http://purl.org/ontology/is/infoservice.html#InfoService"><em>is:InfoService</em></a>
+	 individuals<br />&nbsp;&nbsp;&nbsp;preferred prefix: <strong>isi</strong></li>
+</ul>
+
+<p>Please use them as intended ;)</p>
 
   <h2 id="sec-for">What's the Info Service Ontology for?</h2>
 
@@ -224,24 +248,24 @@ is also the property <a href="http://purl.org/ontology/is/infoservice.html#main_
 	<h3>What is an Information Service?</h3>
 
   <p>A very simple definition is:</p>
-<blockquote>An <strong>Information Service</strong> is a service, which provides (<em><u>serves</u></em>) <em><u>data/knowledge/information</u></em> somehow.</blockquote>
+<blockquote><p>An <strong>Information Service</strong> is a service, which provides (<span class="uli">serves</span>) <span class="uli">data/knowledge/information</span> somehow.</p></blockquote>
 <p>However, this definition is not strong enough to describe the range and domain of an <em>Information Service</em>. Therefore, it is necessary to define the term <em>Information 
 Service</em> in a specific context. Fortunately, <a href="http://www.wikipedia.org/"><em>Wikipedia</em></a> delivers, or better saying <strong>serves</strong>, a good definition 
 of this context, which is called <a href="http://en.wikipedia.org/wiki/Information_system"><em>Information System</em></a>.</p>
-<blockquote>An <strong>Information System</strong> is any <em>combination</em> of <em><u>information technology</u></em> and <em><u>people</u></em>'s activities using that technology 
-to support operations, management, and decision-making.</blockquote>
+<blockquote><p>An <strong>Information System</strong> is any <em>combination</em> of <span class="uli">information technology</span> and <span class="uli">people</span>'s activities using that technology 
+to support operations, management, and decision-making.</p></blockquote>
 <p>The definition continues with explaining the term from a bit more <em>technical</em> view:</p>
-<blockquote>In a very broad sense, the term <em>Information System</em> is frequently used to refer to the <em><u>interaction</u></em> between people, algorithmic processes, 
-<em><u>data</u></em> and technology.</blockquote>
+<blockquote><p>In a very broad sense, the term <em>Information System</em> is frequently used to refer to the <span class="uli">interaction</span> between people, algorithmic processes, 
+<span class="uli">data</span> and technology.</p></blockquote>
 <p>Regarding the first part of this definition, an <em>Information Service</em> is an instance of <em>Information Technology</em>. Hence, an <em>Information Service</em> is a part of 
 an <em>Information System</em>. The second role in this definition is <em>people</em>. This term must be substituted by the term <em>agent</em>, which could be an <em>administrator</em> 
 and/or an <em>user</em>. An <em>user</em> could be a <em>customer</em> and/or <em>contributor</em>. In addition, an <em>agent</em> could be a <em>human</em> or a <em>machine</em>.
  The <em>interaction</em> is that an <em>Information Service</em>, which <em>collects</em> (retrieves), <em>manages</em> (structures) and <em>stores</em> the <em>data/knowledge/information</em> 
  (maybe with the help of an <em>administrator</em>), <em>serves</em> this <em>data/knowledge/information</em> to an <em>user</em>.
 The outcome of this, is the following definition:</p>
-<blockquote>An <strong>Information Service</strong> is this part of an <em>Information System</em> that <em><u>serves</u></em> <em><u>data/knowledge/information</u>*</em> to 
-<em><u>customers</u></em> and <em><u>collects</u></em> it from its <em><u>contributors</u></em>, to <em><u>manage</u></em> and <em><u>store</u></em> it by optionally using 
-<em>administrators</em>.</blockquote>
+<blockquote><p>An <strong>Information Service</strong> is this part of an <em>Information System</em> that <span class="uli">serves</span> <span class="uli">data/knowledge/information</span>* to 
+<span class="uli">customers</span> and <span class="uli">collects</span> it from its <span class="uli">contributors</span>, to <span class="uli">manage</span> and <span class="uli">store</span> it by optionally using 
+<em>administrators</em>.</p></blockquote>
 
 <p>This should be a <strong>technology independent</strong>** definition of the term <em>Information Service</em>. That means an <em>Information Service</em> could be</p>
 <ul>
@@ -442,10 +466,10 @@ top of this document to the RDF/XML and RDF/N3 versions.</p>
   			<tr><th>Status:</th>
   			<td><span property="vs:status" >unstable</span></td></tr>
   			<tr><th>Properties include:</th>
- <td>  <a href="#info_service_contributor_type">info_service_contributor_type</a>
- <a href="#info_service_type">info_service_type</a>
- <a href="#info_service_quality">info_service_quality</a>
+ <td>  <a href="#info_service_type">info_service_type</a>
  <a href="#main_subject">main_subject</a>
+ <a href="#info_service_contributor_type">info_service_contributor_type</a>
+ <a href="#info_service_quality">info_service_quality</a>
  </td></tr>
   			<tr><th>Used with:</th>
  <td>  <a href="#info_service">info_service</a>
@@ -474,9 +498,9 @@ top of this document to the RDF/XML and RDF/N3 versions.</p>
   			<tr><th>Range:</th>
  <td> <span rel="rdfs:range" href="http://purl.org/ontology/is/core#InfoServiceContributorType"><a href="#InfoServiceContributorType">Information Service Contributor Type</a></span>
 </td>	</tr><tr><th>Inverse property of</th>
- <td>  <span rel="owl:inverseOf" resource="[_:VKApbaOA4]">the anonymous defined property with the label
-  							 '<em about="[_:VKApbaOA4]" property="rdfs:label">is info service contributor type of</em>'</span>
- (<span about="[_:VKApbaOA4]" typeof="owl:ObjectProperty"><strong>Object Property</strong></span>, <span about="[_:VKApbaOA4]" typeof="rdf:Property"><strong>RDF Property</strong></span>) </td></tr>
+ <td>  <span rel="owl:inverseOf" resource="[_:lnfxlMHs4]">the anonymous defined property with the label
+  							 '<em about="[_:lnfxlMHs4]" property="rdfs:label">is info service contributor type of</em>'</span>
+ (<span about="[_:lnfxlMHs4]" typeof="owl:ObjectProperty"><strong>Object Property</strong></span>, <span about="[_:lnfxlMHs4]" typeof="rdf:Property"><strong>RDF Property</strong></span>) </td></tr>
  <tr><td>  <span rel="rdfs:isDefinedBy" href="http://purl.org/ontology/is/core#"></span>
  </td></tr><tr><th colspan="2">RDF Property</th>
  <td> <span rel="rdf:type" href="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"></span> </td></tr><tr><th colspan="2">Object Property</th>
@@ -496,9 +520,9 @@ top of this document to the RDF/XML and RDF/N3 versions.</p>
   			<tr><th>Range:</th>
  <td> <span rel="rdfs:range" href="http://purl.org/ontology/is/core#InfoServiceQuality"><a href="#InfoServiceQuality">Information Service Quality</a></span>
 </td>	</tr><tr><th>Inverse property of</th>
- <td>  <span rel="owl:inverseOf" resource="[_:VKApbaOA5]">the anonymous defined property with the label
-  							 '<em about="[_:VKApbaOA5]" property="rdfs:label">is info service quality of</em>'</span>
- (<span about="[_:VKApbaOA5]" typeof="owl:ObjectProperty"><strong>Object Property</strong></span>, <span about="[_:VKApbaOA5]" typeof="rdf:Property"><strong>RDF Property</strong></span>) </td></tr>
+ <td>  <span rel="owl:inverseOf" resource="[_:lnfxlMHs5]">the anonymous defined property with the label
+  							 '<em about="[_:lnfxlMHs5]" property="rdfs:label">is info service quality of</em>'</span>
+ (<span about="[_:lnfxlMHs5]" typeof="owl:ObjectProperty"><strong>Object Property</strong></span>, <span about="[_:lnfxlMHs5]" typeof="rdf:Property"><strong>RDF Property</strong></span>) </td></tr>
  <tr><td>  <span rel="rdfs:isDefinedBy" href="http://purl.org/ontology/is/core#"></span>
  </td></tr><tr><th colspan="2">RDF Property</th>
  <td> <span rel="rdf:type" href="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"></span> </td></tr><tr><th colspan="2">Object Property</th>
@@ -518,9 +542,9 @@ top of this document to the RDF/XML and RDF/N3 versions.</p>
   			<tr><th>Range:</th>
  <td> <span rel="rdfs:range" href="http://purl.org/ontology/is/core#InfoServiceType"><a href="#InfoServiceType">Information Service Type</a></span>
 </td>	</tr><tr><th>Inverse property of</th>
- <td>  <span rel="owl:inverseOf" resource="[_:VKApbaOA6]">the anonymous defined property with the label
-  							 '<em about="[_:VKApbaOA6]" property="rdfs:label">is info service type of</em>'</span>
- (<span about="[_:VKApbaOA6]" typeof="owl:ObjectProperty"><strong>Object Property</strong></span>, <span about="[_:VKApbaOA6]" typeof="rdf:Property"><strong>RDF Property</strong></span>) </td></tr>
+ <td>  <span rel="owl:inverseOf" resource="[_:lnfxlMHs6]">the anonymous defined property with the label
+  							 '<em about="[_:lnfxlMHs6]" property="rdfs:label">is info service type of</em>'</span>
+ (<span about="[_:lnfxlMHs6]" typeof="owl:ObjectProperty"><strong>Object Property</strong></span>, <span about="[_:lnfxlMHs6]" typeof="rdf:Property"><strong>RDF Property</strong></span>) </td></tr>
  <tr><td>  <span rel="rdfs:isDefinedBy" href="http://purl.org/ontology/is/core#"></span>
  </td></tr><tr><th colspan="2">RDF Property</th>
  <td> <span rel="rdf:type" href="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"></span> </td></tr><tr><th colspan="2">Object Property</th>
@@ -540,9 +564,9 @@ top of this document to the RDF/XML and RDF/N3 versions.</p>
   			<tr><th>Sub property of</th>
  <td>  <span rel="rdfs:subPropertyOf" href="http://purl.org/dc/terms/subject"><a href="http://purl.org/dc/terms/subject">dcterms:subject</a></span>
  </td></tr><tr><th>Inverse property of</th>
- <td>  <span rel="owl:inverseOf" resource="[_:VKApbaOA7]">the anonymous defined property with the label
-  							 '<em about="[_:VKApbaOA7]" property="rdfs:label">is main subject of</em>'</span>
- (<span about="[_:VKApbaOA7]" typeof="owl:ObjectProperty"><strong>Object Property</strong></span>, <span about="[_:VKApbaOA7]" typeof="rdf:Property"><strong>RDF Property</strong></span>) </td></tr>
+ <td>  <span rel="owl:inverseOf" resource="[_:lnfxlMHs7]">the anonymous defined property with the label
+  							 '<em about="[_:lnfxlMHs7]" property="rdfs:label">is main subject of</em>'</span>
+ (<span about="[_:lnfxlMHs7]" typeof="owl:ObjectProperty"><strong>Object Property</strong></span>, <span about="[_:lnfxlMHs7]" typeof="rdf:Property"><strong>RDF Property</strong></span>) </td></tr>
  <tr><td>  <span rel="rdfs:isDefinedBy" href="http://purl.org/ontology/is/core#"></span>
  </td></tr><tr><th colspan="2">RDF Property</th>
  <td> <span rel="rdf:type" href="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"></span> </td></tr><tr><th colspan="2">Object Property</th>
@@ -561,9 +585,9 @@ top of this document to the RDF/XML and RDF/N3 versions.</p>
   			<tr><th>Range:</th>
  <td> <span rel="rdfs:range" href="http://purl.org/ontology/is/core#InfoService"><a href="#InfoService">Information Service</a></span>
 </td>	</tr><tr><th>Inverse property of</th>
- <td>  <span rel="owl:inverseOf" resource="[_:VKApbaOA3]">the anonymous defined property with the label
-  							 '<em about="[_:VKApbaOA3]" property="rdfs:label">is info service of</em>'</span>
- (<span about="[_:VKApbaOA3]" typeof="owl:ObjectProperty"><strong>Object Property</strong></span>, <span about="[_:VKApbaOA3]" typeof="rdf:Property"><strong>RDF Property</strong></span>) </td></tr>
+ <td>  <span rel="owl:inverseOf" resource="[_:lnfxlMHs3]">the anonymous defined property with the label
+  							 '<em about="[_:lnfxlMHs3]" property="rdfs:label">is info service of</em>'</span>
+ (<span about="[_:lnfxlMHs3]" typeof="owl:ObjectProperty"><strong>Object Property</strong></span>, <span about="[_:lnfxlMHs3]" typeof="rdf:Property"><strong>RDF Property</strong></span>) </td></tr>
  <tr><td>  <span rel="rdfs:isDefinedBy" href="http://purl.org/ontology/is/core#"></span>
  </td></tr><tr><th colspan="2">RDF Property</th>
  <td> <span rel="rdf:type" href="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"></span> </td></tr><tr><th colspan="2">Object Property</th>

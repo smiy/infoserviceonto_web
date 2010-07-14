@@ -78,3 +78,8 @@ specterm.h3 {
 .restrictions {
 	vertical-align: top;	
 }
+
+.uli {
+	text-decoration:underline;
+	font-style:italic;	
+}
