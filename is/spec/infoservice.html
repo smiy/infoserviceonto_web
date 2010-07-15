@@ -166,7 +166,9 @@ isi:musicbrainz a is:InfoService .
 <img src="http://infoserviceonto.sourceforge.net/is/gfx/is_-_musicbrainz_example.gif" title="The Info Service Ontology - MusicBrainz example" 
 alt="The Info Service Ontology - MusicBrainz example" /></div>
   
-  <p>RDF/Turtle representation of <em>MusicBrainz</em> modelled as <em>Information Service</em>:</p>
+  <p>RDF/Turtle representation of <em>MusicBrainz</em> modelled as <em>Information Service</em> (see also <a about="http://purl.org/ontology/is/infoservice.html" 
+  rel="rdfs:seeAlso" href="http://infoserviceonto.sourceforge.net/is/examples/RDF/infoserviceindividuals.rdf">RDF</a> and <a about="http://purl.org/ontology/is/infoservice.html" 
+  rel="rdfs:seeAlso" href="http://infoserviceonto.sourceforge.net/is/examples/N3/infoserviceindividuals.n3">N3</a> for downloadable representations of this example):</p>
 
   <div class="example">
     <pre about="http://purl.org/ontology/is/infoservice.html" rel="rdfs:seeAlso" href="http://purl.org/ontology/is/inst/musicbrainz">
@@ -206,7 +208,7 @@ isi:musicbrainz
 
   <p>This is an <a href="http://purl.org/ontology/is/infoservice.html#InfoService"><em>is:InfoService</em></a> individual for <em>MusicBrainz</em> as proof-of-concept example. Therefore, 
 I used also some category definitions from <a href="http://dbpedia.org/"><em>DBpedia</em></a> (important 
-is also the property <a href="http://purl.org/ontology/is/infoservice.html#main_subject"><em>is:main_subject</em></a> for associating a main subject of an info service).</p>
+is also the property <a href="http://purl.org/ontology/is/infoservice.html#main_subject"><em>is:main_subject</em></a> for associating a main subject of an <em>Information Service</em>).</p>
 
   <div style="clear: left;"></div>
 
@@ -402,7 +404,7 @@ top of this document to the RDF/XML and RDF/N3 versions.</p>
 
 <h2>Classes</h2>
  
-<div class="specterm" id="InfoServiceContributorType" about="http://purl.org/ontology/is/core#InfoServiceContributorType" typeof="owl:Class">
+<div class="specterm" id="InfoServiceContributorType" about="http://purl.org/ontology/is/core#InfoServiceContributorType" typeof="rdfs:Class">
   			<h3>Class: is:InfoServiceContributorType</h3> 
   			<em property="rdfs:label" >Information Service Contributor Type</em> - <span property="rdfs:comment" >This concept is for describing the different contributor types of information services, e.g. expert, \ncommunity or mixed. Please feel free to define further information service contributor types.\nPlease use therefore the namespace "http://purl.org/ontology/is/ctypes/".</span> <br /><table style="th { float: top; }">
   			<tr><th>Status:</th>
@@ -415,13 +417,13 @@ top of this document to the RDF/XML and RDF/N3 versions.</p>
  </td></tr>
  <tr><td>  <span rel="rdfs:isDefinedBy" href="http://purl.org/ontology/is/core#"></span>
  </td></tr><tr><th colspan="2">OWL Class</th>
- <td>  </td></tr><tr><th colspan="2">RDFS Class</th>
- <td> <span rel="rdf:type" href="http://www.w3.org/2000/01/rdf-schema#Class"></span> </td></tr>
+ <td> <span rel="rdf:type" href="http://www.w3.org/2002/07/owl#Class"></span> </td></tr><tr><th colspan="2">RDFS Class</th>
+ <td>  </td></tr>
   			</table>
   			
   			<p style="float: right; font-size: small;">[<a href="#InfoServiceContributorType">#</a>] <!-- InfoServiceContributorType --> [<a href="#glance">back to top</a>]</p>
   			<br/>
-  			</div><div class="specterm" id="InfoServiceQuality" about="http://purl.org/ontology/is/core#InfoServiceQuality" typeof="owl:Class">
+  			</div><div class="specterm" id="InfoServiceQuality" about="http://purl.org/ontology/is/core#InfoServiceQuality" typeof="rdfs:Class">
   			<h3>Class: is:InfoServiceQuality</h3> 
   			<em property="rdfs:label" >Information Service Quality</em> - <span property="rdfs:comment" >This concept is for describing specific quality levels or ratings, e.g. good or bad or more detailed ones, of \ninformation services. Please feel free to use this concept as hook for more complex and detailed information service quality description \nmodellings in sub ontologies. Please use therefore the domain "http://purl.org/ontology/is/quality/".Futhermore, such information \nservice ratings could be done by different information service rating agencies, so that the customer of such ratings could select \nits information service ratings agency of choice.</span> <br /><table style="th { float: top; }">
   			<tr><th>Status:</th>
@@ -434,13 +436,13 @@ top of this document to the RDF/XML and RDF/N3 versions.</p>
  </td></tr>
  <tr><td>  <span rel="rdfs:isDefinedBy" href="http://purl.org/ontology/is/core#"></span>
  </td></tr><tr><th colspan="2">OWL Class</th>
- <td>  </td></tr><tr><th colspan="2">RDFS Class</th>
- <td> <span rel="rdf:type" href="http://www.w3.org/2000/01/rdf-schema#Class"></span> </td></tr>
+ <td> <span rel="rdf:type" href="http://www.w3.org/2002/07/owl#Class"></span> </td></tr><tr><th colspan="2">RDFS Class</th>
+ <td>  </td></tr>
   			</table>
   			
   			<p style="float: right; font-size: small;">[<a href="#InfoServiceQuality">#</a>] <!-- InfoServiceQuality --> [<a href="#glance">back to top</a>]</p>
   			<br/>
-  			</div><div class="specterm" id="InfoServiceType" about="http://purl.org/ontology/is/core#InfoServiceType" typeof="owl:Class">
+  			</div><div class="specterm" id="InfoServiceType" about="http://purl.org/ontology/is/core#InfoServiceType" typeof="rdfs:Class">
   			<h3>Class: is:InfoServiceType</h3> 
   			<em property="rdfs:label" >Information Service Type</em> - <span property="rdfs:comment" >This concept is for describing the type of an information service, e.g. 'social network service', \n'recommender service' or 'encyclopedia'. Please feel free to define further information service types for categorization.\nPlease use therefore the namespace "http://purl.org/ontology/is/types/".</span> <br /><table style="th { float: top; }">
   			<tr><th>Status:</th>
@@ -453,23 +455,23 @@ top of this document to the RDF/XML and RDF/N3 versions.</p>
  </td></tr>
  <tr><td>  <span rel="rdfs:isDefinedBy" href="http://purl.org/ontology/is/core#"></span>
  </td></tr><tr><th colspan="2">OWL Class</th>
- <td>  </td></tr><tr><th colspan="2">RDFS Class</th>
- <td> <span rel="rdf:type" href="http://www.w3.org/2000/01/rdf-schema#Class"></span> </td></tr>
+ <td> <span rel="rdf:type" href="http://www.w3.org/2002/07/owl#Class"></span> </td></tr><tr><th colspan="2">RDFS Class</th>
+ <td>  </td></tr>
   			</table>
   			
   			<p style="float: right; font-size: small;">[<a href="#InfoServiceType">#</a>] <!-- InfoServiceType --> [<a href="#glance">back to top</a>]</p>
   			<br/>
   			</div>
-<div class="specterm" id="InfoService" about="http://purl.org/ontology/is/core#InfoService" typeof="owl:Class">
+<div class="specterm" id="InfoService" about="http://purl.org/ontology/is/core#InfoService" typeof="rdfs:Class">
   			<h3>Class: is:InfoService</h3> 
   			<em property="rdfs:label" >Information Service</em> - <span property="rdfs:comment" >Extended definition:\n\n\t"An Information Service is this part of an Information System that serves data/knowledge/information to customers and collects it \n\tfrom its contributors, to manage and store it by optionally using administrators."\n\nPlease refer also this article[1] about the definition of the term 'Information Service'.\n\nThis concept is for linking a piece of information of a specific concept instance (or at least website links or other data representations \nof this concept instance), e.g. a foaf:Agent, a mo:Track or a mo:MusicArtist to a related website of a specific information service (modelled \nas individual of is:InfoService), e.g. Wikipedia, MySpace, MusicBrainz, Discogs, Last.fm, Pandora, BBC, ... . With this concept it is possible \nto describe the underlying information services of that knowledge representation more in detail, so that the client, which consumes that \n'linked data' could choose, which source it likes to use by evaluating the description of the information service of that website link or \nother data representation.\nPlease use for further is:InfoService instances the namespace "http://purl.org/ontology/is/inst/".\n\n\n[1] https://infoserviceonto.wordpress.com/2010/06/23/what-is-an-information-service/</span> <br /><table style="th { float: top; }">
   			<tr><th>Status:</th>
   			<td><span property="vs:status" >unstable</span></td></tr>
   			<tr><th>Properties include:</th>
- <td>  <a href="#info_service_type">info_service_type</a>
- <a href="#main_subject">main_subject</a>
- <a href="#info_service_contributor_type">info_service_contributor_type</a>
+ <td>  <a href="#info_service_contributor_type">info_service_contributor_type</a>
  <a href="#info_service_quality">info_service_quality</a>
+ <a href="#info_service_type">info_service_type</a>
+ <a href="#main_subject">main_subject</a>
  </td></tr>
   			<tr><th>Used with:</th>
  <td>  <a href="#info_service">info_service</a>
@@ -478,8 +480,8 @@ top of this document to the RDF/XML and RDF/N3 versions.</p>
  </td></tr>
  <tr><td>  <span rel="rdfs:isDefinedBy" href="http://purl.org/ontology/is/core#"></span>
  </td></tr><tr><th colspan="2">OWL Class</th>
- <td>  </td></tr><tr><th colspan="2">RDFS Class</th>
- <td> <span rel="rdf:type" href="http://www.w3.org/2000/01/rdf-schema#Class"></span> </td></tr>
+ <td> <span rel="rdf:type" href="http://www.w3.org/2002/07/owl#Class"></span> </td></tr><tr><th colspan="2">RDFS Class</th>
+ <td>  </td></tr>
   			</table>
   			
   			<p style="float: right; font-size: small;">[<a href="#InfoService">#</a>] <!-- InfoService --> [<a href="#glance">back to top</a>]</p>
@@ -498,9 +500,9 @@ top of this document to the RDF/XML and RDF/N3 versions.</p>
   			<tr><th>Range:</th>
  <td> <span rel="rdfs:range" href="http://purl.org/ontology/is/core#InfoServiceContributorType"><a href="#InfoServiceContributorType">Information Service Contributor Type</a></span>
 </td>	</tr><tr><th>Inverse property of</th>
- <td>  <span rel="owl:inverseOf" resource="[_:lnfxlMHs4]">the anonymous defined property with the label
-  							 '<em about="[_:lnfxlMHs4]" property="rdfs:label">is info service contributor type of</em>'</span>
- (<span about="[_:lnfxlMHs4]" typeof="owl:ObjectProperty"><strong>Object Property</strong></span>, <span about="[_:lnfxlMHs4]" typeof="rdf:Property"><strong>RDF Property</strong></span>) </td></tr>
+ <td>  <span rel="owl:inverseOf" resource="[_:AmiUITWf4]">the anonymous defined property with the label
+  							 '<em about="[_:AmiUITWf4]" property="rdfs:label">is info service contributor type of</em>'</span>
+ (<span about="[_:AmiUITWf4]" typeof="owl:ObjectProperty"><strong>Object Property</strong></span>, <span about="[_:AmiUITWf4]" typeof="rdf:Property"><strong>RDF Property</strong></span>) </td></tr>
  <tr><td>  <span rel="rdfs:isDefinedBy" href="http://purl.org/ontology/is/core#"></span>
  </td></tr><tr><th colspan="2">RDF Property</th>
  <td> <span rel="rdf:type" href="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"></span> </td></tr><tr><th colspan="2">Object Property</th>
@@ -520,9 +522,9 @@ top of this document to the RDF/XML and RDF/N3 versions.</p>
   			<tr><th>Range:</th>
  <td> <span rel="rdfs:range" href="http://purl.org/ontology/is/core#InfoServiceQuality"><a href="#InfoServiceQuality">Information Service Quality</a></span>
 </td>	</tr><tr><th>Inverse property of</th>
- <td>  <span rel="owl:inverseOf" resource="[_:lnfxlMHs5]">the anonymous defined property with the label
-  							 '<em about="[_:lnfxlMHs5]" property="rdfs:label">is info service quality of</em>'</span>
- (<span about="[_:lnfxlMHs5]" typeof="owl:ObjectProperty"><strong>Object Property</strong></span>, <span about="[_:lnfxlMHs5]" typeof="rdf:Property"><strong>RDF Property</strong></span>) </td></tr>
+ <td>  <span rel="owl:inverseOf" resource="[_:AmiUITWf5]">the anonymous defined property with the label
+  							 '<em about="[_:AmiUITWf5]" property="rdfs:label">is info service quality of</em>'</span>
+ (<span about="[_:AmiUITWf5]" typeof="owl:ObjectProperty"><strong>Object Property</strong></span>, <span about="[_:AmiUITWf5]" typeof="rdf:Property"><strong>RDF Property</strong></span>) </td></tr>
  <tr><td>  <span rel="rdfs:isDefinedBy" href="http://purl.org/ontology/is/core#"></span>
  </td></tr><tr><th colspan="2">RDF Property</th>
  <td> <span rel="rdf:type" href="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"></span> </td></tr><tr><th colspan="2">Object Property</th>
@@ -542,9 +544,9 @@ top of this document to the RDF/XML and RDF/N3 versions.</p>
   			<tr><th>Range:</th>
  <td> <span rel="rdfs:range" href="http://purl.org/ontology/is/core#InfoServiceType"><a href="#InfoServiceType">Information Service Type</a></span>
 </td>	</tr><tr><th>Inverse property of</th>
- <td>  <span rel="owl:inverseOf" resource="[_:lnfxlMHs6]">the anonymous defined property with the label
-  							 '<em about="[_:lnfxlMHs6]" property="rdfs:label">is info service type of</em>'</span>
- (<span about="[_:lnfxlMHs6]" typeof="owl:ObjectProperty"><strong>Object Property</strong></span>, <span about="[_:lnfxlMHs6]" typeof="rdf:Property"><strong>RDF Property</strong></span>) </td></tr>
+ <td>  <span rel="owl:inverseOf" resource="[_:AmiUITWf6]">the anonymous defined property with the label
+  							 '<em about="[_:AmiUITWf6]" property="rdfs:label">is info service type of</em>'</span>
+ (<span about="[_:AmiUITWf6]" typeof="owl:ObjectProperty"><strong>Object Property</strong></span>, <span about="[_:AmiUITWf6]" typeof="rdf:Property"><strong>RDF Property</strong></span>) </td></tr>
  <tr><td>  <span rel="rdfs:isDefinedBy" href="http://purl.org/ontology/is/core#"></span>
  </td></tr><tr><th colspan="2">RDF Property</th>
  <td> <span rel="rdf:type" href="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"></span> </td></tr><tr><th colspan="2">Object Property</th>
@@ -564,9 +566,9 @@ top of this document to the RDF/XML and RDF/N3 versions.</p>
   			<tr><th>Sub property of</th>
  <td>  <span rel="rdfs:subPropertyOf" href="http://purl.org/dc/terms/subject"><a href="http://purl.org/dc/terms/subject">dcterms:subject</a></span>
  </td></tr><tr><th>Inverse property of</th>
- <td>  <span rel="owl:inverseOf" resource="[_:lnfxlMHs7]">the anonymous defined property with the label
-  							 '<em about="[_:lnfxlMHs7]" property="rdfs:label">is main subject of</em>'</span>
- (<span about="[_:lnfxlMHs7]" typeof="owl:ObjectProperty"><strong>Object Property</strong></span>, <span about="[_:lnfxlMHs7]" typeof="rdf:Property"><strong>RDF Property</strong></span>) </td></tr>
+ <td>  <span rel="owl:inverseOf" resource="[_:AmiUITWf7]">the anonymous defined property with the label
+  							 '<em about="[_:AmiUITWf7]" property="rdfs:label">is main subject of</em>'</span>
+ (<span about="[_:AmiUITWf7]" typeof="owl:ObjectProperty"><strong>Object Property</strong></span>, <span about="[_:AmiUITWf7]" typeof="rdf:Property"><strong>RDF Property</strong></span>) </td></tr>
  <tr><td>  <span rel="rdfs:isDefinedBy" href="http://purl.org/ontology/is/core#"></span>
  </td></tr><tr><th colspan="2">RDF Property</th>
  <td> <span rel="rdf:type" href="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"></span> </td></tr><tr><th colspan="2">Object Property</th>
@@ -585,9 +587,9 @@ top of this document to the RDF/XML and RDF/N3 versions.</p>
   			<tr><th>Range:</th>
  <td> <span rel="rdfs:range" href="http://purl.org/ontology/is/core#InfoService"><a href="#InfoService">Information Service</a></span>
 </td>	</tr><tr><th>Inverse property of</th>
- <td>  <span rel="owl:inverseOf" resource="[_:lnfxlMHs3]">the anonymous defined property with the label
-  							 '<em about="[_:lnfxlMHs3]" property="rdfs:label">is info service of</em>'</span>
- (<span about="[_:lnfxlMHs3]" typeof="owl:ObjectProperty"><strong>Object Property</strong></span>, <span about="[_:lnfxlMHs3]" typeof="rdf:Property"><strong>RDF Property</strong></span>) </td></tr>
+ <td>  <span rel="owl:inverseOf" resource="[_:AmiUITWf3]">the anonymous defined property with the label
+  							 '<em about="[_:AmiUITWf3]" property="rdfs:label">is info service of</em>'</span>
+ (<span about="[_:AmiUITWf3]" typeof="owl:ObjectProperty"><strong>Object Property</strong></span>, <span about="[_:AmiUITWf3]" typeof="rdf:Property"><strong>RDF Property</strong></span>) </td></tr>
  <tr><td>  <span rel="rdfs:isDefinedBy" href="http://purl.org/ontology/is/core#"></span>
  </td></tr><tr><th colspan="2">RDF Property</th>
  <td> <span rel="rdf:type" href="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"></span> </td></tr><tr><th colspan="2">Object Property</th>
