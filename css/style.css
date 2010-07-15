@@ -83,3 +83,17 @@ specterm.h3 {
 	text-decoration:underline;
 	font-style:italic;	
 }
+
+.header {
+	width: 100%;
+}
+
+.infobox {
+	border:2px dashed #FFCC00; 
+	font-size:small; 
+	padding:10px;
+	width:400px;
+	height:210px;
+	text-align:right;
+	margin-right:20px;
+}
